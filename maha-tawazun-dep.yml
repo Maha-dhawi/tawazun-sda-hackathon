@@ -29,6 +29,6 @@ spec:
             - name: GOLDEN_DB_USERNAME
               value: "root"  
             - name: DB_PASSWORD
-              value: 1234 
+              value: "1234" 
           ports:
           - containerPort: 8080
