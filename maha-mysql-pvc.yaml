@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: maha-mysql-pvc
+  namespace: maha-tawazun
+  labels:
+    app: tawazun
+    name: MahaAlotaibi 
+spec:
+  storageClassName: manual
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi

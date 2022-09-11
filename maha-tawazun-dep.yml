@@ -17,7 +17,7 @@ spec:
         app: tawazun
     spec:
       containers:
-        - image: 
+        - image: 2160003120/tawazun-sda-hackathon
           name: tawazun
           env:
             - name: GOLDEN_DB_URL
@@ -25,10 +25,10 @@ spec:
             - name: GOLDEN_DB_PORT
               value: '3306'  
             - name: GOLDEN_DB_NAME
-              value: goldenwaste  
+              value: tawazun  
             - name: GOLDEN_DB_USERNAME
               value: root  
-            - name: GOLDEN_DB_PASSWORD
-              value: DevOps2022 
+            - name: DB_PASSWORD
+              value: 1234 
           ports:
           - containerPort: 8080

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: maha-mysql-svc
+  namespace: maha-tawazun
+  labels:
+    app: tawazun
+    name: MahaAlotaibi
+spec:
+  selector:
+    app: mysql
+  type: ClusterIP
+  ports:
+  - protocol: TCP
+    port: 3306 
