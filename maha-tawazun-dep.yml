@@ -21,13 +21,13 @@ spec:
           name: tawazun
           env:
             - name: GOLDEN_DB_URL
-              value: mysql
+              value: "mysql"
             - name: GOLDEN_DB_PORT
               value: '3306'  
             - name: GOLDEN_DB_NAME
-              value: tawazun  
+              value: "tawazun"  
             - name: GOLDEN_DB_USERNAME
-              value: root  
+              value: "root"  
             - name: DB_PASSWORD
               value: 1234 
           ports:
